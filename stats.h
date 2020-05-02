@@ -9,15 +9,15 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
- *
+ * @file Header file for a C program 
+ * @brief The following file contains function declarations which will be used to perform
+ *        to perform several statistical analysis on an array
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
- *
+ * @author Monib Saadi
+ * @date 5/2/2020
  */
+ 
 #ifndef __STATS_H__
 #define __STATS_H__
 
@@ -35,6 +35,12 @@
  *
  * @return <Add Return Informaiton here>
  */
-
-
+void print_statistics(unsigned char *array);
+/**
+ * @breif A function that prints the statistics of an array including minimum, maximum, mean, and median.
+ * @param <int *array> <pointer to given array>
+ * @return It returns nothing just print statistics on screen
+ */
+void print_array(unsigned char *array,int length);
+float find_median(unsigned char *array,int length);
 #endif /* __STATS_H__ */
